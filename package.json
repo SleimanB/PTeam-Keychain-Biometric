@@ -1,0 +1,42 @@
+{
+  "name": "cordova-plugin-biometric-keychain",
+  "version": "1.0",
+  "description": "Scan the fingerprint of your user with the TouchID or FaceID sensor (iPhone 5S, iPhone 6(S), ..) and control a key in the Keychain and detect if any TouchID or fingerprint is added or removed for security reason",
+  "cordova": {
+    "id": "cordova-plugin-biometric-keychain",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SleimanB/PTeam-Keychain-Biometric.git"
+  },
+  "keywords": [
+    "TouchID",
+    "Touch ID",
+    "Fingerprint",
+    "Biometric",
+    "Scanner",
+    "KeyChain",
+    "detect change",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "S.Al-Bacha",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SleimanB/PTeam-Keychain-Biometric.git/issues"
+  },
+  "homepage": "https://github.com/SleimanB/PTeam-Keychain-Biometric.git#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
