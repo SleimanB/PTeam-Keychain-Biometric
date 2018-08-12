@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="cordova-plugin-biometric-keychain"
-		version="1.0">
+		version="0.0.1">
     <name>Biometric and Keychain</name>
 	  <author>S.Al-Bacha</author>
     <description>Biometric and Keychain cordova plugin for iOS and Android</description>
