@@ -1,23 +1,15 @@
 
 
-# cordova-plugin-keychain-touch-id 
+# cordova-plugin-biometric-keychain 
 
-A cordova plugin adding the iOS TouchID / Android fingerprint to your app and allowing you to store a password securely in the device keychain.
+A cordova plugin adding the iOS TouchID and FaceID / Android fingerprint to your app and allowing you to store a password securely in the device keychain with detect change when andy new finderprint or touchId added or removed from your device
 
 ## Installation
 
-### Automatically (CLI / Plugman)
-Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman), compatible with [PhoneGap 3.0 CLI](http://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html#The%20Command-line%20Interface_add_features), here's how it works with the CLI (backup your project first!):
-
-From npm:
-```
-$ cordova plugin add cordova-plugin-keychain-touch-id
-$ cordova prepare
-```
 
 The latest, from the master repo:
 ```
-$ cordova plugin add https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id
+$ cordova plugin add https://github.com/SleimanB/PTeam-Keychain-Biometric.git
 $ cordova prepare
 ```
 
@@ -25,26 +17,12 @@ touchid.js is brought in automatically. There is no need to change or add anythi
 
 ### Manually
 
-1\. Add the following xml to your `config.xml` in the root directory of your `www` folder:
-```xml
-<feature name="TouchID">
-  <param name="ios-package" value="TouchID" />
-</feature>
-```
-
-You'll need to add the `LocalAuthentication.framework` and `Security.framework` to your project.
-Click your project, Build Phases, Link Binary With Libraries, search for and add the frameworks.
-
-2\. Grab a copy of TouchID.js, add it to your project and reference it in `index.html`:
-```html
-<script type="text/javascript" src="js/touchid.js"></script>
-```
-
-3\. Download the source files and copy them to your project.
+Download the source files and copy them to your project.
 
 iOS: Copy the four `.h` and two `.m` files to `platforms/ios/<ProjectName>/Plugins`
 
 ### Base on the original touch ID created by different people
+* cordova-plugin-keychain-touch-id
 * https://github.com/EddyVerbruggen/cordova-plugin-touch-id
 * https://github.com/kunder-lab/kunder-touchid-keychain
 * https://github.com/PeerioTechnologies/peerio-keychain-touchid
@@ -79,6 +57,9 @@ will check if there is a password stored within the keychain for the given key
 
 **delete(key,successCallback, errorCallback)**
 will delete the password stored under given key from the keychain
+
+**didFingerprintDatabaseChange(successCallback, errorCallback)**
+will check if there a new fingerprint or touchid added or removed for your device
 
 ## Android quirks
 
@@ -118,6 +99,16 @@ if (window.plugins) {
 if (window.plugins) {
     window.plugins.touchid.delete("MyKey", function() {
         alert("Password key deleted");
+    });
+}
+
+if(window.plugins)
+{
+    window.plugins.touchid.didFingerprintDatabaseChange(function(changed) {
+	    if(changed)
+	    {
+	      alert("fingerprint changed");
+	    }
     });
 }
 ```
