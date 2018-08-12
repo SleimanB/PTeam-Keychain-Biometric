@@ -22,7 +22,7 @@ Download the source files and copy them to your project.
 iOS: Copy the four `.h` and two `.m` files to `platforms/ios/<ProjectName>/Plugins`
 
 ### Base on the original touch ID created by different people
-* cordova-plugin-keychain-touch-id
+* https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id
 * https://github.com/EddyVerbruggen/cordova-plugin-touch-id
 * https://github.com/kunder-lab/kunder-touchid-keychain
 * https://github.com/PeerioTechnologies/peerio-keychain-touchid
