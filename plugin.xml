@@ -3,7 +3,7 @@
         id="cordova-plugin-biometric-keychain"
 		version="1.0">
     <name>Biometric and Keychain</name>
-	  <author>S.J.Hoeksma</author>
+	  <author>S.Al-Bacha</author>
     <description>Biometric and Keychain cordova plugin for iOS and Android</description>
     <license>Apache 2.0</license>
     <keywords>cordova,touchid,keychain,plugin,biometric,detect change</keywords>
