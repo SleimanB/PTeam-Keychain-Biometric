@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-biometric-keychain",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scan the fingerprint of your user with the TouchID or FaceID sensor (iPhone 5S, iPhone 6(S), ..) and control a key in the Keychain and detect if any TouchID or fingerprint is added or removed for security reason",
   "cordova": {
     "id": "cordova-plugin-biometric-keychain",
