@@ -9,8 +9,7 @@ A cordova plugin adding the iOS TouchID and FaceID / Android fingerprint to your
 
 The latest, from the master repo:
 ```
-$ cordova plugin add https://github.com/SleimanB/PTeam-Keychain-Biometric.git
-$ cordova prepare
+$ cordova plugin add cordova-plugin-biometric-keychain
 ```
 
 touchid.js is brought in automatically. There is no need to change or add anything in your html.
