@@ -4,6 +4,10 @@
 
 A cordova plugin adding the iOS TouchID and FaceID / Android fingerprint to your app and allowing you to store a password securely in the device keychain with detect change when any new fingerprint or touchId added or removed from your device
 
+## Platforms
+- Android
+- IOS
+
 ## Installation
 
 
